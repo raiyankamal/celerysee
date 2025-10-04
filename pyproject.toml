@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "celerysee"
+version = "0.0.1"
+description = "A minimal tool for watching celery queues."
+readme = "README.md"
+license = 'GPL-3.0-or-later'
+license-files = [ "LICENSE" ]
+authors = [
+  { name = "Raiyan Kamal", email = "raiyan.kamal@gmail.com" }
+]
+dependencies = [
+  "celery>=3.1"
+]
+
+[project.urls]
+Homepage = "https://github.com/raiyankamal/celerysee"
+
+[tool.setuptools]
+packages = ["celerysee"]
